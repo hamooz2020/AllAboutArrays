@@ -12,7 +12,7 @@ public class Main {
         int[] array = createNumberArray(size, lowestNumber, highestNumber);
 
         Pattern1();
-
+        Pattern2();
     }
 
     public static int[] createNumberArray(int size, int lowestNumber, int highestNumber) {
@@ -37,16 +37,29 @@ public class Main {
         int number = (int) ((Math.random() * (highestNumber - lowestNumber + 1)) + lowestNumber);
         return number;
     }
-    public static void Pattern1(){
-        for(int rows=0; rows < 6; rows++){
 
-            for(int columns = 0; columns < 6; columns++){
+    public static void Pattern1() {
+        for (int rows = 0; rows < 6; rows++) {
+
+            for (int columns = 0; columns < 6; columns++) {
                 System.out.print("*");
             }
             System.out.println();
         }
+    }
+
+    public static void Pattern2() {
+        for (int rows = 1; rows <= 6; rows++) {
+
+            for (int columns = 0; columns < 6; columns++) {
+
+
+                System.out.print(rows);
+            }
+            System.out.println();
         }
     }
+}
 
 
 
