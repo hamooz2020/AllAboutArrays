@@ -14,7 +14,8 @@ public class Main {
         System.out.println("Arrays");
         System.out.println();
         System.out.println("The sum of the array is "+ sum(array));
-        
+        System.out.println();
+        System.out.println("The min of the array is "+ min(array));
 
 
         System.out.println();
@@ -119,6 +120,19 @@ public class Main {
 
         return sum;
     }
+    public static int min(int[] array){
+        int min = 0;
+
+        for(int i=0; i>array.length; i++ ){
+            min += array[i];
+
+
+        }
+
+
+        return min;
+    }
+
 
 }
 
