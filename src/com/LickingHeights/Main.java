@@ -11,6 +11,15 @@ public class Main {
 
         int[] array = createNumberArray(size, lowestNumber, highestNumber);
 
+        System.out.println("Arrays");
+        System.out.println();
+        System.out.println("The sum of the array is "+ sum(array));
+        
+
+
+        System.out.println();
+        System.out.println("Patterns");
+        System.out.println();
         Pattern1();
         Pattern2();
         Pattern3();
@@ -96,6 +105,19 @@ public class Main {
             }
             System.out.println();
         }
+    }
+
+    public static int sum(int[] array){
+       int sum = 0;
+
+       for(int i=0; i<array.length; i++){
+           sum += array[i];
+
+
+       }
+
+
+        return sum;
     }
 
 }
