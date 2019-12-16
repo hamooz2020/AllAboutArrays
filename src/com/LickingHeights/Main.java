@@ -1,5 +1,7 @@
 package com.LickingHeights;
 
+import java.util.Random;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -20,13 +22,14 @@ public class Main {
         System.out.println();
         System.out.println("The max of the array is " + max(array));
 
+
         String[] places = {"Dubai", "my room", "school", "castle"};
         String[] adjectives = {"black", "big", "sweet", "many"};
         String[] people = {"Walter", "Melvin", "Hamza", "John"};
-        String[] verbs = {"think", "surprise", "fly", "have"};
-        String[] times = {"morning", "night", "afternoon", "midnight"};
+        String[] verbs = {"walking", "jogging", "running", "crawling"};
+        String[] times = {"8:00", "9:00", "10:00", "11:00"};
         String[] things = {"Chair", "hair", "home", "store"};
-
+        sentenceGenerator(people,verbs,places,times,adjectives,things);
 
 //        System.out.println();
 //        System.out.println("Patterns");
@@ -163,6 +166,18 @@ public class Main {
         return max;
     }
 
+
+    public static void sentenceGenerator(String[]people,String[]verbs, String[]places,String[]times,String[]adjectives,String[]things){
+        System.out.println("I was "+ randomWord(verbs)+ " down the "+ randomWord(places));
+        System.out.println(" around "+ randomWord(times)+ " with my best friend "+ randomWord(people));
+        System.out.println(" and we "+ randomWord(verbs)+ " a "+ randomWord(adjectives)+ randomWord(things));
+        System.out.println(" that was "+ randomWord(verbs)+ randomWord(things)+"s");
+    }
+
+    public static String randomWord(String[] array){
+        Random random = new Random();
+        return array[random.nextInt(array.length)];
+    }
  //   public static int bubbleSort(int[] array) {
   //      int bubbleSort, i;
     //    for (int j = i + 1; i < array.length; i++) {
@@ -174,9 +189,7 @@ public class Main {
 
     //    }
     // }
-    public static String sentenceGenerator(String{} array)
-    Random random = new Random();
-    return array
+
 }
 
 
