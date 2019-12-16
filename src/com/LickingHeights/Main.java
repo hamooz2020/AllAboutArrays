@@ -24,10 +24,10 @@ public class Main {
         String[] adjectives = {"black", "big", "sweet", "many"};
         String[] people = {"Walter", "Melvin", "Hamza", "John"};
         String[] verbs = {"think", "surprise", "fly", "have"};
-        String[] places = {"morning", "night", "afternoon", "midnight"};
-        String[] places = {"Chair", "hair", "home", "store"};
+        String[] times = {"morning", "night", "afternoon", "midnight"};
+        String[] things = {"Chair", "hair", "home", "store"};
 
-        
+
 //        System.out.println();
 //        System.out.println("Patterns");
 //        System.out.println();
@@ -174,7 +174,9 @@ public class Main {
 
     //    }
     // }
-    public static String
+    public static String sentenceGenerator(String{} array)
+    Random random = new Random();
+    return array
 }
 
 
