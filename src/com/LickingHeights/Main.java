@@ -30,7 +30,10 @@ public class Main {
         String[] times = {"8:00", "9:00", "10:00", "11:00"};
         String[] things = {"Chair", "hair", "home", "store"};
         sentenceGenerator(people,verbs,places,times,adjectives,things);
-
+        String[] firstName = {"Lil", "Big", "Money"};
+        String[] secondName = {"Hamza", "Daddy", "Boss"};
+        String[] thirdName = {"Bands", "Long", "Gangsta"};
+        Print80srapperName(firstName, secondName,thirdName);
 //        System.out.println();
 //        System.out.println("Patterns");
 //        System.out.println();
@@ -178,6 +181,12 @@ public class Main {
         Random random = new Random();
         return array[random.nextInt(array.length)];
     }
+    public static void Print80srapperName(String[]firstName, String[]secondName,String[]thirdName){
+    System.out.println(randomWord(firstName)+" "+randomWord(secondName)+" "+randomWord(thirdName));
+    }
+
+
+
  //   public static int bubbleSort(int[] array) {
   //      int bubbleSort, i;
     //    for (int j = i + 1; i < array.length; i++) {
